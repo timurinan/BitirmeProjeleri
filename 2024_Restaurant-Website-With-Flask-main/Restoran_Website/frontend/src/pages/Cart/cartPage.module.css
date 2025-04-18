@@ -1,0 +1,226 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 1.5rem;
+  margin-top: 0.5rem;
+  
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  flex: 3 0;
+  justify-content: space-evenly;
+  border: 1px solid #161A30;
+  border-radius: 1rem;
+  list-style-type: none;
+  margin: 0.5rem;
+  padding: 0;
+  background-color: #B6BBC4;
+}
+
+.list li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #161A30;
+  color: black;
+}
+
+.list li:last-child {
+  border: none;
+}
+
+.list li img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 22px;
+  object-fit: cover;
+}
+
+.list li a {
+  color: #161A30; 
+  text-decoration: none;
+  transition: color 0.3s; 
+}
+
+.list li a:hover {
+  color: #31304D; 
+}
+
+.list li div {
+  padding: 1rem;
+}
+
+.list li div:not(:first-child) {
+  flex-basis: 18%;
+}
+
+.list li select {
+  width: 3rem;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 100;
+  background-color: #F0ECE5;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.list li select:focus {
+  border-color: #161A30;
+  box-shadow: 0 0 0 0.2rem rgba(2, 31, 63, 0.25);
+}
+
+
+.list .remove_button {
+  border-radius: 1rem;
+  border: none;
+  padding: 0.5rem 1rem; 
+  color: white; 
+  background-color: #e74c3c; 
+  opacity: 0.9;
+  outline: none;
+  transition: background-color 0.3s, opacity 0.3s, transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.list .remove_button:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-color: #c0392b; 
+  transform: scale(1.05); 
+}
+
+.list .remove_button:active {
+  transform: scale(0.95); 
+}
+
+
+.checkout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 3;
+  height: 20rem;
+  border: 1px solid #161A30;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: #B6BBC4;
+}
+
+.checkout > div {
+  font-size: 1.4rem;
+  margin: 1rem;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.checkout .foods_count {
+  margin-bottom: 1.5rem;
+}
+
+.checkout .foods_count::before {
+  content: 'ÜRÜN: ';
+  color: #161A30;
+}
+
+.checkout .total_price::before {
+  content: 'FİYAT: ';
+  color: #161A30;
+}
+
+.checkout a {
+  padding: 1rem;
+  color: white;
+  background: #31304D;
+  display: block;
+  width: 99%;
+  border-radius: 1rem;
+  text-align: center;
+  justify-self: center;
+}
+
+.checkout a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transform: scale(1.02); 
+}
+.checkout a:active {
+  
+  transform: scale(0.95); 
+}
+
+/* Recommendation Box */
+.recommendationBox {
+  border: 1px solid #161A30;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 2rem;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 4em);
+  box-sizing: border-box;
+}
+
+.recommendationBox p {
+  flex: 1;
+  margin: 1;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.recommendationBox button {
+  margin-left: 1rem;
+  border-radius: 1rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  background: #161A30;
+  width: 120px;
+  height: 60px;
+}
+
+.recommendationBox button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+body {
+  background-color: #161A30;
+}
+
+.quantity-selector {
+  display: inline-block;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #f9f9f9;
+}
+
+.quantity-selector select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  font-size: 1rem;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.quantity-selector select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
